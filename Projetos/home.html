@@ -15,10 +15,34 @@
         body{
             font-family: 'Poppins', sans-serif;/*define a fonte da pagina como poppins */
             background: linear-gradient(135deg,#030712,#374151);
-            
-
+            color:white;/*cor de todo o texto que compoem*/
+            line-height: 1.6;/* ajusta o espaçamento entre as linhaspara melhor legibilidade*/
+            scroll-behavior: smooth;/* faz com que a rolagem da pagina seja suave*/
+            text-align: justify;
+        }
+        a{
+            text-decoration: none;/* REMOVE O SUBLINHADO DOS LINKS*/
+            color:#b8b3ff; /*define a cor dos links*/
+            transition: color 0.3 ease;/*add cor para a transição quando o link mudar*/
+        }
+        a:hover{
+            color:#4B5563;/* função que gera a alternancia do link quando o mouse passa por cima.*/
         }
 
+        /* BARRA DE NAVEGAÇÃO*/
+        nav{
+            display: flex;/*
+            organiza os itens dentro da barra de navegação em linha*/
+            justify-content: space-between;/*espaça os itens um em cada extremidade*/
+            align-items: center;/* alinha os itens verticalmente ao centro*/
+            background: #01010f;/* define o fundo da barra de navegação*/
+            padding: 10px 10px;/* defiune o espaçamento interno da barra de navegação*/
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);/* faz com que a barra de nav ganhe uma sombra*/
+            position: static;/* faz com que  a barra fique fixa*/
+            top: 0; /* a barra de navehgação ficara no topo da pagina*/
+            z-index: 1000;/* garante que a barra de navegação esteja acima de outros elementos*/
+
+        }
     </style>
 </head>
 <body>
@@ -27,7 +51,7 @@
     <!-- BARRA DE NAVEGAÇÃO -->
     <nav> <!-- CARREGAR LOGO-->
         <div>  <!--  ESTILO DE FORMATAÇÃO IN LINE(DENTRO DA LINHA)   style="background-color: rgb(130, 82, 175);"-->
-            <a href="home.html">--LOGO--<img src="User_icon_2.svg.png" alt=""style="height: 2%;width: 15%;"></a>
+            <a href="home.html">--LOGO--<img src="User_icon_2.svg.png" alt=""style="height: 40%;width: 15%;"></a>
         </div>
         <ul>
             <li><a href="home.html">HOME</a></li>
