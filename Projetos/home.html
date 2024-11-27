@@ -64,25 +64,55 @@
             box-shadow: inset 0 4px 6px rgba(255, 251, 251, 0.3);/* aplica sombra interna no cabeçalho*/
 
         }
-        main section h2{
-            text-align: left;
-            padding: 40px;
-            background: #4B5563;
-            box-shadow: inset 0 15px 6px rgba(0, 0, 0, 0.3);
+        header h1{
+            font-size: 36px;/* define o tamnaho da fonte*/
+            color: aliceblue;/* define a cor do titulo*/
+            text-shadow: 0 3px 5px rgba(255, 255, 255, 0.701);/* add somnra ao texto titulo*/
+        }
+        /*SESSOES*/
+        section {
+            text-align: justify;
+            padding: 40px 20px;/* define o espacamento interno das seçoes */
+            margin: 20px auto;/* define a margem em torno das seçoes*/
+            max-width: 1200px;/* limita a largura maxima das seçoes*/
+            background: #01010f;/* define o fundo da seçoes*/
+            border-radius: 10px;/* add borda redondada á seção*/
+            box-shadow: 0 6px 10px rgba(5, 1, 23, 0.4);/* aplica uma sombra externa á seção*/
+            transition: transform 0.3s ease, box-shadow 0.3 ease;/* adiciona transições suaves para efeitos de hover*/       
+        }
+        section:hover{
+            transform: translateY(-10px);/*move a sessao para cima ao passar o mouse sobre ela*/
+            box-shadow: o 8px 15px rgba(5, 1, 23, 0.6);/*aumenta a sombra ao passar o mouse sobre a seção*/
+
         }
 
-        main section p{
-            text-align: justify;
-            padding: 40px;
-            background: #4B5563;
-            box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);
+        section h2{
+            font-size: 28px;/*define o tamanho da fonte de subtitulo da seção*/
+            color: antiquewhite;/*define a cor do texto subtitulo da seção*/
+            margin-bottom: 20px;/*define uma margem abaixo do subtitulo da seção*/
         }
-        main section div{
-            text-align: center;
-            padding: 40px;
-            background: #4B5563;
-            box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.3);
-            
+
+
+        section p{
+            margin-bottom: 15px;/* define uma margem abaixo dos paragrafos*/
+            text-align: justify;/*alinha o texto para justificado*/
+        }
+
+        /*IMAGEM*/
+
+        .image-container{
+            text-align: center;/* alinhamento da imagem*/
+            margin: 30px 0;/*define a margim acima e abaixo do container*/
+        }
+        .image-container img{
+             width: 320px ;/* define a dimenção da imagem*/
+             border: 3px solid #000066e3;/*adiciona borda na imagem*/
+             border-radius: 10px;/*define o arredondamento */
+             box-shadow: 0 4px 6px rgba(22, 5, 84, 0.3);/*aplica uma uma sombra sutil á imagem*/
+             transition: transform 0.3 ease;/*adiciona uma transição suave ao passar o mouse sobre a imagem*/
+        }
+        .image-container img:hover{
+            transform: scale(1.05);/* aumenta ligeiramente o tamanho da imagem ao passar o mouse sobre ela*/
         }
     </style>
 </head>
@@ -114,7 +144,7 @@
             <p>HTML (HyperText Markup Language) é a linguagem de marcação usada para criar páginas web. Ele define a estrutura básica de um documento na web, utilizando tags (ou elementos) para organizar e formatar conteúdo como textos, imagens, links, formulários e outros recursos.  O HTML é composto por uma série de tags que indicam a estrutura e o comportamento de uma página. As tags geralmente vêm em pares, com uma tag de abertura e uma tag de fechamento, embora algumas possam ser autossuficientes. As tags são usadas para estruturar o conteúdo de forma hierárquica, como cabeçalhos, parágrafos, listas e divisões de seção. O código HTML é interpretado pelos navegadores web, que exibem as páginas de acordo com o que está especificado no arquivo HTML. O HTML é frequentemente combinado com CSS (Cascading Style Sheets), que é usado para definir o estilo visual da página, e JavaScript, que adiciona interatividade e funcionalidades dinâmicas.
             </p>
             <div>
-                <img src="https://via.placeholder.com/300x200" alt="imagem sobre HTML">
+                <img src="https://via.placeholder.com/300x200" alt="imagem sobre HTML ">
             </div>
         </section>
         <!-- sessao css-->
