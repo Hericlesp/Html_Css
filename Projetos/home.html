@@ -37,11 +37,52 @@
             align-items: center;/* alinha os itens verticalmente ao centro*/
             background: #01010f;/* define o fundo da barra de navegação*/
             padding: 10px 10px;/* defiune o espaçamento interno da barra de navegação*/
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);/* faz com que a barra de nav ganhe uma sombra*/
+            box-shadow: 0px 4px 6px rgba(255, 251, 251, 0.3);/* faz com que a barra de nav ganhe uma sombra*/
             position: static;/* faz com que  a barra fique fixa*/
             top: 0; /* a barra de navehgação ficara no topo da pagina*/
             z-index: 1000;/* garante que a barra de navegação esteja acima de outros elementos*/
+        }
+        nav .logo{
+            font-size: 24px;/* DEFINE O TAMANHO DA FONTE DA LOGO*/
+            font-weight: bold;/* TORNA A LOGO EM NEGRITO */
+            color: white;/* COR PARA A LOGO */
+        }
+        nav ul{
+            list-style: none;/* remove os marcadores das listas*/
+            display: flex;/*organiza os itens na msm linha*/
+            gap: 20px;/* define o espaço entre os itens da lista*/
+        }
+        nav ul li{
+            display: inline;/*exibe os itens da lista como elementos em linha
+            */
+        }
+        /*CABEÇALHO - HEADER   */
+        header{
+            text-align: center;/* cenytraliza o conteudo do cabeçalho*/
+            padding: 40px 20px;/* define o espaçamento interno do cabeçalho*/
+            background: linear-gradient(#000000,#000043);/* aplica um gradiante de fundo ao cabeçalho*/
+            box-shadow: inset 0 4px 6px rgba(255, 251, 251, 0.3);/* aplica sombra interna no cabeçalho*/
 
+        }
+        main section h2{
+            text-align: left;
+            padding: 40px;
+            background: #4B5563;
+            box-shadow: inset 0 15px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        main section p{
+            text-align: justify;
+            padding: 40px;
+            background: #4B5563;
+            box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        main section div{
+            text-align: center;
+            padding: 40px;
+            background: #4B5563;
+            box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.3);
+            
         }
     </style>
 </head>
@@ -61,11 +102,11 @@
         </ul>
         
     </nav>
-    <head>
+    <header>
         <h1>
             BEM VINDO AO MUNDO DO HTML E CSS
         </h1>
-    </head>
+    </header>
 
     <main><!-- SEÇÃO DE HTML-->
         <section>
