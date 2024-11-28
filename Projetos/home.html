@@ -4,128 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INTRO HTML&CSS</title>
-    <style>
-        /* ESTILOS GERAIS*/
-        *{
-            margin: 0;/*margem- remove as margens do html padrao*/
-            padding: 0;/*magem do bloco- remove o preenchimento do bloco padding*/
-            box-sizing: border-box;/*formato de bloco caixa- faz com que oo tamanho dos elementos inclua borda  de preenchimento*/
-        }
-
-        body{
-            font-family: 'Poppins', sans-serif;/*define a fonte da pagina como poppins */
-            background: linear-gradient(135deg,#030712,#374151);
-            color:white;/*cor de todo o texto que compoem*/
-            line-height: 1.6;/* ajusta o espaçamento entre as linhaspara melhor legibilidade*/
-            scroll-behavior: smooth;/* faz com que a rolagem da pagina seja suave*/
-            text-align: justify;
-        }
-        a{
-            text-decoration: none;/* REMOVE O SUBLINHADO DOS LINKS*/
-            color:#b8b3ff; /*define a cor dos links*/
-            transition: color 0.3 ease;/*add cor para a transição quando o link mudar*/
-        }
-        a:hover{
-            color:#4B5563;/* função que gera a alternancia do link quando o mouse passa por cima.*/
-        }
-
-        /* BARRA DE NAVEGAÇÃO*/
-        nav{
-            display: flex;/*
-            organiza os itens dentro da barra de navegação em linha*/
-            justify-content: space-between;/*espaça os itens um em cada extremidade*/
-            align-items: center;/* alinha os itens verticalmente ao centro*/
-            background: #01010f;/* define o fundo da barra de navegação*/
-            padding: 10px 10px;/* defiune o espaçamento interno da barra de navegação*/
-            box-shadow: 0px 4px 6px rgba(255, 251, 251, 0.3);/* faz com que a barra de nav ganhe uma sombra*/
-            position: static;/* faz com que  a barra fique fixa*/
-            top: 0; /* a barra de navehgação ficara no topo da pagina*/
-            z-index: 1000;/* garante que a barra de navegação esteja acima de outros elementos*/
-        }
-        nav .logo{
-            font-size: 24px;/* DEFINE O TAMANHO DA FONTE DA LOGO*/
-            font-weight: bold;/* TORNA A LOGO EM NEGRITO */
-            color: white;/* COR PARA A LOGO */
-        }
-        nav ul{
-            list-style: none;/* remove os marcadores das listas*/
-            display: flex;/*organiza os itens na msm linha*/
-            gap: 20px;/* define o espaço entre os itens da lista*/
-        }
-        nav ul li{
-            display: inline;/*exibe os itens da lista como elementos em linha
-            */
-        }
-        /*CABEÇALHO - HEADER   */
-        header{
-            text-align: center;/* cenytraliza o conteudo do cabeçalho*/
-            padding: 40px 20px;/* define o espaçamento interno do cabeçalho*/
-            background: linear-gradient(#000000,#000043);/* aplica um gradiante de fundo ao cabeçalho*/
-            box-shadow: inset 0 4px 6px rgba(255, 251, 251, 0.3);/* aplica sombra interna no cabeçalho*/
-
-        }
-        header h1{
-            font-size: 36px;/* define o tamnaho da fonte*/
-            color: aliceblue;/* define a cor do titulo*/
-            text-shadow: 0 3px 5px rgba(255, 255, 255, 0.701);/* add somnra ao texto titulo*/
-        }
-        /*SESSOES*/
-        section {
-            text-align: justify;
-            padding: 40px 20px;/* define o espacamento interno das seçoes */
-            margin: 20px auto;/* define a margem em torno das seçoes*/
-            max-width: 1200px;/* limita a largura maxima das seçoes*/
-            background: #01010f;/* define o fundo da seçoes*/
-            border-radius: 10px;/* add borda redondada á seção*/
-            box-shadow: 0 6px 10px rgba(5, 1, 23, 0.4);/* aplica uma sombra externa á seção*/
-            transition: transform 0.3s ease, box-shadow 0.3 ease;/* adiciona transições suaves para efeitos de hover*/       
-        }
-        section:hover{
-            transform: translateY(-10px);/*move a sessao para cima ao passar o mouse sobre ela*/
-            box-shadow: o 8px 15px rgba(5, 1, 23, 0.6);/*aumenta a sombra ao passar o mouse sobre a seção*/
-
-        }
-
-        section h2{
-            font-size: 28px;/*define o tamanho da fonte de subtitulo da seção*/
-            color: antiquewhite;/*define a cor do texto subtitulo da seção*/
-            margin-bottom: 20px;/*define uma margem abaixo do subtitulo da seção*/
-        }
-
-
-        section p{
-            margin-bottom: 15px;/* define uma margem abaixo dos paragrafos*/
-            text-align: justify;/*alinha o texto para justificado*/
-        }
-
-        /*IMAGEM*/
-
-        .image-container{
-            text-align: center;/* alinhamento da imagem*/
-            margin: 30px 0;/*define a margim acima e abaixo do container*/
-        }
-        .image-container img{
-             width: 320px ;/* define a dimenção da imagem*/
-             border: 3px solid #000066e3;/*adiciona borda na imagem*/
-             border-radius: 10px;/*define o arredondamento */
-             box-shadow: 0 4px 6px rgba(22, 5, 84, 0.3);/*aplica uma uma sombra sutil á imagem*/
-             transition: transform 0.3 ease;/*adiciona uma transição suave ao passar o mouse sobre a imagem*/
-        }
-        .image-container img:hover{
-            transform: scale(1.05);/* aumenta ligeiramente o tamanho da imagem ao passar o mouse sobre ela*/
-        }
-
-    </style>
 </head>
 <body>
     <!-- ESTILO DE FORMATAÇÃO IN LINE(DENTRO DA LINHA)
         style="background-color: rgba(136, 117, 148, 0.612); text-align: justify; margin: 20px;"-->
     <!-- BARRA DE NAVEGAÇÃO -->
     <nav> <!-- CARREGAR LOGO-->
-        <div>  <!--  ESTILO DE FORMATAÇÃO IN LINE(DENTRO DA LINHA)   style="background-color: rgb(130, 82, 175);"-->
+        <div class="logo">  <!--  ESTILO DE FORMATAÇÃO IN LINE(DENTRO DA LINHA)   style="background-color: rgb(130, 82, 175);"-->
             <a href="home.html">--LOGO--<img src="User_icon_2.svg.png" alt=""style="height: 40%;width: 15%;"></a>
         </div>
-        <ul>
+        <ul class="menu">
             <li><a href="home.html">HOME</a></li>
             <li><a href="html.html">HTML</a></li>
             <li><a href="css.html">CSS</a></li>
