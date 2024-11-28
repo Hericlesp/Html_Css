@@ -93,9 +93,71 @@
             </section>
             <section>
                 <h2>Tabela em HTML</h2>
-                <p>As tabelas em HTML são estruturas utilizadas para organizar e apresentar dados em formato bidimensional, com linhas e colunas. Criadas com o elemento &lt;table&gt;, elas são amplamente usadas para exibir informações tabulares, como relatórios, horários, comparativos ou qualquer tipo de dado que precise de uma disposição ordenada. Dentro de uma tabela, outros elementos complementares ajudam a estruturar as informações:
-                    
+                <p>As tabelas em HTML são estruturas utilizadas para organizar e apresentar dados em formato bidimensional, com linhas e colunas. Criadas com o elemento &lt;table&gt;, elas são amplamente usadas para exibir informações tabulares, como relatórios, horários, comparativos ou qualquer tipo de dado que precise de uma disposição ordenada. Dentro de uma tabela, outros elementos complementares ajudam a estruturar as informações: 
                 </p>
+                <table border="1" style="border-collapse: collapse; width: 100%;">
+                    <thead>
+                      <tr>
+                        <th colspan="2" style="text-align: center;">Tags de Tabela em HTML</th>
+                      </tr>
+                      <tr>
+                        <th>Tag/Atributo</th>
+                        <th>Descrição</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>Elemento de linha de tabela. Usado para adicionar linhas a uma tabela antes de adicionar dados e títulos da tabela.</td>
+                      </tr>
+                      <tr>
+                        <td>&lt;td&gt;</td>
+                        <td>Elemento de dados da tabela. Pode ser aninhado dentro de um elemento de linha da tabela (&lt;tr&gt;) para adicionar uma célula de dados.</td>
+                      </tr>
+                      <tr>
+                        <td>&lt;thead&gt;</td>
+                        <td>Elemento de cabeçalho da tabela. Define os títulos das colunas da tabela encapsulados em linhas (&lt;tr&gt;).</td>
+                      </tr>
+                      <tr>
+                        <td>rowspan (Atributo)</td>
+                        <td>
+                          Indica quantas linhas uma célula deve abranger. Exemplo:  
+                          <pre>&lt;td rowspan="2"&gt;Célula grande&lt;/td&gt;</pre>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>&lt;tbody&gt;</td>
+                        <td>Elemento do corpo da tabela. Contém todos os dados da tabela, exceto o conteúdo de cabeçalho e rodapé.</td>
+                      </tr>
+                      <tr>
+                        <td>&lt;th&gt;</td>
+                        <td>Elemento de cabeçalho da tabela. Usado para adicionar títulos às linhas e colunas.</td>
+                      </tr>
+                      <tr>
+                        <td>colspan (Atributo)</td>
+                        <td>
+                          Indica quantas colunas uma célula deve abranger. Exemplo:  
+                          <pre>&lt;th colspan="2"&gt;Cabeçalho grande&lt;/th&gt;</pre>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>&lt;tfoot&gt;</td>
+                        <td>Elemento de rodapé da tabela. Usado para fornecer conteúdo de rodapé ou resumir o conteúdo no final de uma tabela.</td>
+                      </tr>
+                      <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Elemento de tabela em HTML. Representa uma tabela bidimensional composta de linhas e colunas.</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td colspan="2" style="text-align: center;">Fim das Tags de Tabela</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+
+                  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">Documentação oficial</a>
+
             </section>
         </main>
     </div>
