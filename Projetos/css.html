@@ -1,29 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- ESTILO DE FORMATAÇÃO IN LINE(DENTRO DA LINHA)
-        style="background-color: rgba(136, 117, 148, 0.612); text-align: justify; margin: 20px;"-->
-    <!-- BARRA DE NAVEGAÇÃO -->
-    <nav> <!-- CARREGAR LOGO-->
-        <div class="logo">  <!--  ESTILO DE FORMATAÇÃO IN LINE(DENTRO DA LINHA)   style="background-color: rgb(130, 82, 175);"-->
-            <a href="home.html">--LOGO--<img src="User_icon_2.svg.png" alt=""style="height: 40%;width: 15%;"></a>
-        </div>
-        <ul class="menu">
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="html.html">HTML</a></li>
-            <li><a href="css.html">CSS</a></li>
-            <li><a href="contatos.html">CONTATOS</a></li>
-        </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS - INTRODUÇÃO</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- ESTILO DE FORMATAÇÃO IN LINE(DENTRO DA LINHA)
+            style="background-color: rgba(136, 117, 148, 0.612); text-align: justify; margin: 20px;"-->
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <nav> <!-- CARREGAR LOGO-->
+            <div class="logo">  <!--  ESTILO DE FORMATAÇÃO IN LINE(DENTRO DA LINHA)   style="background-color: rgb(130, 82, 175);"-->
+                <a href="home.html">--LOGO--<img src="User_icon_2.svg.png" alt=""style="height: 40%;width: 15%;"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="contatos.html">CONTATOS</a></li>
+            </ul>
+            
+        </nav>
+        <header>
+            <h1>
+                ENTENDA A CSS
+            </h1>
+                <P>O cssé fundamental para estilização da web. aprenda sobre sua historia, curiosidades e como ele transforma a aparencia das paginas web.</P>
+        </header>
+        <!-- CONTEUDO E BARRA LATERAL-->
+        <div class="container">
+            <!-- COLUNA PRINCIPAL-->
+            <main>
+                <section>
+                    <h2>O que é CSS??</h2>
+                    <p>
+                        **<strong>CSS</strong>** (Cascading Style Sheets) é uma linguagem usada para definir o estilo e a aparência de páginas web. 
+                        Ela foi criada por Håkon Wium Lie e introduzida pela primeira vez em 1996 como uma maneira de separar a estrutura do conteúdo.
+                    </p>
+                    <p>
+                        CSS é responsável por controlar o layout, as cores, as fontes e o posicionamento dos elementos em uma página HTML.
+                        Ele permite que você crie designs responsivos, estilizados e interativos sem alterar o conteúdo HTML da página.
+                    </p>
+                </section>
+                <section>
+                    <H2>
+                        ESTRUTURA BASICA DO CSS!!
+                    </H2>
+                    <p>
+                        O CSS é composto por regras de estilo que se aplicam aos elementos HTML. Cada regra CSS é formada por um seletor (que define quais elementos serão estilizados) e uma declaração (que define as propriedades e valores). 
+                        Um exemplo simples de CSS seria:
+                    </p>
+                    <pre><code>
+        /* Exemplo de CSS */
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
         
-    </nav>
-    <header>
-        <h1>
-            SOBRE CSS
-        </h1>
-    </header>
+        h1 {
+            font-size: 2em;
+            color: #4CAF50;
+        }
+                    </code></pre>
+                </section>
+                <section>
+                    <h2>
+                        PROPRIEDADES COMUNS EM CSS
+                    </h2>
+                    <ul>
+                        <li><strong>color</strong>: Define a cor do texto.</li>
+                        <li><strong>background-color</strong>: Define a cor de fundo de um elemento.</li>
+                        <li><strong>font-size</strong>: Define o tamanho da fonte.</li>
+                        <li><strong>margin</strong>: Define a margem externa de um elemento.</li>
+                        <li><strong>padding</strong>: Define o preenchimento interno de um elemento.</li>
+                        <li><strong>border</strong>: Define a borda de um elemento.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>
+                        POR QUE APRENDER CSS??
+                    </h2>
+                    <p>
+                        Aprender CSS é fundamental para quem deseja criar sites modernos e atraentes. Com CSS, você pode controlar a aparência dos sites e oferecer uma experiência visual melhorada para os usuários.
+                    </p>
+                    <p>
+                        Além disso, o CSS permite criar layouts responsivos, que se adaptam a diferentes tamanhos de tela, o que é essencial para tornar o seu site acessível em dispositivos móveis.
+                    </p>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">Documentação oficial</a>
+                </section>
+            </main>
+        <!-- Barra Lateral -->
+        <aside>
+            <h2>Curiosidades sobre CSS</h2>
+            <ul>
+                <li>O CSS foi introduzido em 1996 por Håkon Wium Lie.</li>
+                <li>A versão mais recente do CSS é o CSS3, que traz muitos novos recursos, como animações e transições.</li>
+                <li>CSS permite criar animações e transições, tornando as páginas web mais interativas.</li>
+                <li>O conceito de "Cascading" (cascata) refere-se à ordem de aplicação das regras CSS.</li>
+                <li>Existem frameworks como Bootstrap que ajudam a escrever CSS de maneira mais rápida e eficiente.</li>
+            </ul>
+            <h3>Links úteis</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/css/">Tutorial W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">MDN Web Docs</a></li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+            </ul>
+        </aside>
+        </div>
+    </body>
+</html>
