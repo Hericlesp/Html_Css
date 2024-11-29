@@ -159,3 +159,76 @@ footer{
 footer  a{
     color: aliceblue;
 }
+
+
+
+/* formatação para contatos*/
+
+/* Estilo do Formulário */
+
+.formulario {
+    align-items: center;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #3a3d40;
+    background: #2d2f33;
+    color: #eaeaea;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #00ff99;
+}
+
+button.botao {
+    padding: 12px 20px;
+    background-color: #00ff99;
+    color: #1d1f21;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 50%;
+    margin: 0 auto;
+}
+
+button.botao:hover {
+    background-color: #00cc7a;
+    transform: scale(1.05);
+}
+
+button[type="submit"] {
+    background-color: #00ff99;
+    width: 50%;
+    margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #00cc7a;
+}
+
+/* Centralizando o container da section */
+.form-container {
+    width: 100%;
+    max-width: 900px; /* Ajuste a largura máxima conforme necessário */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding-top: 20px;
+}
