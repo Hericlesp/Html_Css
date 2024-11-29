@@ -90,6 +90,11 @@ section p{
     margin-bottom: 15px;/* define uma margem abaixo dos paragrafos*/
     text-align: justify;/*alinha o texto para justificado*/
 }
+pre{
+font-size: 18px;
+
+}
+
 
 /*IMAGEM*/
 
@@ -107,6 +112,43 @@ section p{
 .image-container img:hover{
     transform: scale(1.05);/* aumenta ligeiramente o tamanho da imagem ao passar o mouse sobre ela*/
 }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+}
+main {
+    flex: 3;
+    margin-right: 2rem;
+}
+aside{
+    flex: 1;
+    max-height: fit-content;
+    background-color: rgba(8, 0, 30, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(66, 66, 66, 0.7);
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+aside:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+}
+aside h2, aside h3{
+    color: #b7ff00;
+    margin-bottom: 1rem;
+}
+aside ul{
+    list-style-type:square ;
+    margin-left: 1rem;
+}
+aside ul li{
+    margin-bottom: 0.5rem;
+}
+
+
 /*RODAPÉ*/
 footer{
     text-align: center;/*CENTRALIZA O TEXTO DO RODAPE*/
